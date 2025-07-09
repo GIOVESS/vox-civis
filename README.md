@@ -93,7 +93,7 @@ vox-civis/
 - Screen reader friendly
 - High contrast mode support
 
-## 📱 Mobile Support
+##  Mobile Support
 
 This project includes Capacitor configuration for potential mobile app deployment:
 
@@ -104,7 +104,7 @@ npx cap add android
 npx cap add ios
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please feel free to submit issues and pull requests.
 
@@ -114,17 +114,9 @@ We welcome contributions! Please feel free to submit issues and pull requests.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
 
-- Built with [Next.js](https://nextjs.org/)
-- UI components from [Radix UI](https://www.radix-ui.com/)
-- Styling with [Tailwind CSS](https://tailwindcss.com/)
-- Maps powered by [Leaflet](https://leafletjs.com/)
-
----
-
-**VoxCivis** - Empowering communities through civic technology. 🏛️ 
+**VoxCivis** - Empowering communities through civic technology. 
