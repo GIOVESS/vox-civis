@@ -2,7 +2,7 @@
 
 A modern civic engagement platform built with Next.js, React, and TypeScript. VoxCivis provides a comprehensive solution for community reporting and civic participation.
 
-## 🚀 Features
+##  Features
 
 - **Interactive Map Interface**: Built with Leaflet and React-Leaflet for geographic data visualization
 - **Modern UI/UX**: Beautiful interface using Radix UI components and Tailwind CSS
@@ -11,7 +11,7 @@ A modern civic engagement platform built with Next.js, React, and TypeScript. Vo
 - **Real-time Updates**: Dynamic filtering and data visualization
 - **Accessibility**: Built with accessibility in mind using Radix UI primitives
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework**: Next.js 14 with App Router
 - **Language**: TypeScript
@@ -22,7 +22,7 @@ A modern civic engagement platform built with Next.js, React, and TypeScript. Vo
 - **Mobile**: Capacitor for mobile app capabilities
 - **Package Manager**: pnpm
 
-## 📦 Installation
+##  Installation
 
 1. **Clone the repository**:
    ```bash
@@ -47,7 +47,7 @@ A modern civic engagement platform built with Next.js, React, and TypeScript. Vo
 
 5. **Open your browser** and navigate to `http://localhost:3000`
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 vox-civis/
@@ -67,14 +67,14 @@ vox-civis/
 └── public/               # Static assets
 ```
 
-## 🎯 Available Scripts
+##  Available Scripts
 
 - `pnpm dev` - Start development server
 - `pnpm build` - Build for production
 - `pnpm start` - Start production server
 - `pnpm lint` - Run ESLint
 
-## 🌍 Civic Engagement Features
+##  Civic Engagement Features
 
 ### Map Interface
 - Interactive geographic visualization
