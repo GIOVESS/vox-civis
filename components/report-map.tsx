@@ -18,7 +18,7 @@ const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), 
 const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: false })
 
 // Kenya's coordinates
-const KENYA_CENTER = [-1.2921, 36.8219] // Nairobi
+const KENYA_CENTER: [number, number] = [-1.2921, 36.8219] // Nairobi
 const KENYA_ZOOM = 7
 
 // Different colors for different categories
@@ -54,7 +54,6 @@ export default function ReportMap() {
           leafletRef.current = L
 
           // Fix the icon paths
-          delete L.Icon.Default.prototype._getIconUrl
           L.Icon.Default.mergeOptions({
             iconRetinaUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png",
             iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
@@ -364,11 +363,13 @@ export default function ReportMap() {
           zoom={KENYA_ZOOM}
           style={{ height: "calc(100vh - 4rem)", width: "100%" }}
           scrollWheelZoom={true}
-          whenCreated={(map) => {
-            mapRef.current = map
+          ref={mapRef}
+          whenReady={() => {
             // Force a resize after map is created to ensure it fills container
             setTimeout(() => {
-              map.invalidateSize()
+              if (mapRef.current) {
+                mapRef.current.invalidateSize()
+              }
             }, 100)
           }}
         >
